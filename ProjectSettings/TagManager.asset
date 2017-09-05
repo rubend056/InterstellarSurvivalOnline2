@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - planetRB
+  - star
+  - planet
+  - Tree
+  - Pine
+  - Rock
+  - RockSmall
+  - Singleton
+  - UI
   layers:
   - Default
   - TransparentFX

@@ -8,10 +8,9 @@ public class PointerPick : MonoBehaviour {
 
 	public Inventory inv;
 	public BuildInventory binv;
-	public Camera cam;
-	public PlayerController pc;
-	public CameraControlAdva cca;
-	public SmoothLookAtC slac;
+//	public PlayerController pc;
+//	public CameraControlAdva cca;
+//	public SmoothLookAtC slac;
 	public GameObject toBuild;
 	public GameObject buildUi;
 	public float placeDistance = 10;
@@ -89,7 +88,9 @@ public class PointerPick : MonoBehaviour {
 					CameraControlAdva.instance.changeFollow (selectedPlanet);
 					if (tagL != "star")
 						NetTransportManager.instance.togglePlayerSpawner (!PlayerController.spawned);
-				} 
+					else NetTransportManager.instance.togglePlayerSpawner (false);
+				}
+
 			}else {
 				selectedPlanet = null;
 				if (previousPlanet != null)
@@ -115,8 +116,8 @@ public class PointerPick : MonoBehaviour {
 		if (gunTrans!=null){
 			if (hitSomething && rayHit.distance <= orderDistance)
 				gunTrans.rotation = Quaternion.Slerp (gunTrans.rotation, Quaternion.LookRotation ((rayHit.point - gunTrans.position).normalized), 0.5f);
-			else 
-				gunTrans.rotation = Quaternion.Slerp (gunTrans.rotation, Quaternion.LookRotation (((cam.transform.position + (cam.transform.forward*30)) - gunTrans.position).normalized), 0.5f);
+			else
+				gunTrans.rotation = Quaternion.Slerp (gunTrans.rotation, Quaternion.LookRotation (((CameraControlAdva.instance.cam.transform.position + (CameraControlAdva.instance.cam.transform.forward * 30)) - gunTrans.position).normalized), 0.5f);
 		}
 
 //		if (Input.GetMouseButtonUp (0)) {
@@ -239,8 +240,8 @@ public class PointerPick : MonoBehaviour {
 //	}
 
 	void toggleComponents(bool cm){
-		pc.enabled = cm;
-		cca.pause = !cm;
+		PlayerController.instance.enabled = cm;
+		CameraControlAdva.instance.pause = !cm;
 		//cca.enabled = cm;
 		//slac.enabled = cm;
 //		if (cm) {
@@ -293,10 +294,10 @@ public class PointerPick : MonoBehaviour {
 	void doRaycast(){
 		if (!alreadyDone) {
 			Vector3 position = Input.mousePosition;
-			position.x /= cam.pixelRect.width;
-			position.y /= cam.pixelRect.height;
+			position.x /= CameraControlAdva.instance.cam.pixelRect.width;
+			position.y /= CameraControlAdva.instance.cam.pixelRect.height;
 
-			Ray ray = cam.ViewportPointToRay (position);
+			Ray ray = CameraControlAdva.instance.cam.ViewportPointToRay (position);
 			if (Physics.Raycast (ray, out rayHit, float.PositiveInfinity)) {
 				hitSomething = true;
 				//Debug.Log (rayHit.transform.gameObject.name);
@@ -328,14 +329,7 @@ public class PointerPick : MonoBehaviour {
 	void buildingUIUpdate(){
 		
 		if (hitSomething && rayHit.distance < placeDistance){ 
-//			GameObject UIParent;
-//			if (rayHit.collider.tag == "Building") { // if what you hit is tagged building 
-//				UIParent = rayHit.collider.gameObject;
-//				getAndActivateWorldUI (UIParent);
-//			} else if (rayHit.collider.transform.parent != null && rayHit.collider.transform.parent.tag == "Building") {  // or if the parent is tagged building
-//				UIParent = rayHit.collider.transform.parent.gameObject;
-//				getAndActivateWorldUI (UIParent);
-//			}
+			//do something
 
 		} else if (buildingUIShown) {
 			if (RaycastWorldUI ())
@@ -351,48 +345,18 @@ public class PointerPick : MonoBehaviour {
 		}
 	}
 
-//	void getAndActivateWorldUI(GameObject UIParent){
-//		ReferenceToUI rtui = UIParent.GetComponent<ReferenceToUI>();
-//		if (rtui != null)
-//			activeUIGO = rtui.UIGameObj;
-//		else activeUIGO = UIParent.transform.GetChild (0).gameObject;
-//		activeUIGO.SetActive (true);
-//		buildingUIShown = true;
-//	}
-	/*bool checkForUI(){
-		PointerEventData pointer = new PointerEventData(EventSystem.current);
-		pointer.position = new Vector2(0.5f,0.5f);
-
-		List<RaycastResult> raycastResults = new List<RaycastResult>();
-		EventSystem.current.RaycastAll(pointer, raycastResults);
-
-		if(raycastResults.Count > 0)
-		{
-			Debug.Log (raycastResults [0].gameObject.tag.ToString ());
-			if (raycastResults [0].gameObject.tag == "BuildingUI") {
-				raycastResults [0].gameObject.SendMessage ("beingHit");
-				return true;
-			}
-		}
-		return false;w
-
-
-	}*/
-
 	bool RaycastWorldUI(){
 		
 		PointerEventData pointerData = new PointerEventData (EventSystem.current);
-
-		pointerData.position = new Vector2(Screen.width/2,Screen.height/2);
-
+//		pointerData.position = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 
 		EventSystem.current.RaycastAll (pointerData, results);
 
 		if (results.Count > 0) {
 			string hitTag = results [0].gameObject.tag;
-			for (int i = 0; i < results.Count; i++) {
-				//Debug.Log (results [i].gameObject.tag + i.ToString ());
-			}
+//			for (int i = 0; i < results.Count; i++) {
+//				//Debug.Log (results [i].gameObject.tag + i.ToString ());
+//			}
 
 			if (hitTag == "BuildingUI" || hitTag == "BuildingUII") {
 				//Debug.Log (hitTag);

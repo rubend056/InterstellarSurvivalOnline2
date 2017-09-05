@@ -1,9 +1,9 @@
 fileFormatVersion: 2
 guid: 5ad62a57c8d379646963e3ad7be9a0b7
-timeCreated: 1482420496
+timeCreated: 1504629536
 licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Armature
     100002: BackHead
@@ -319,8 +319,10 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
       human bone 'Head' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
@@ -330,6 +332,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: WalkingLoop
@@ -913,7 +916,10 @@ ModelImporter:
     globalScale: 0.266
     meshCompression: 1
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -929,6 +935,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -1365,48 +1372,48 @@ ModelImporter:
     - name: Stomach
       parentName: base
       position: {x: -9.680151e-12, y: 0.0039186175, z: -2.4305961e-14}
-      rotation: {x: -0.7131781, y: 0.00000058568634, z: -0.00000008502511, w: 0.70098287}
+      rotation: {x: -0.7074556, y: 0.00000059050524, z: -0.000000084336975, w: 0.70675784}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: Chest
       parentName: Stomach
-      position: {x: -9.812114e-13, y: 0.0033446574, z: -1.3085642e-11}
-      rotation: {x: 0.0034647665, y: 0.073734626, z: -0.011629399, w: 0.9972041}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 1.9541521e-11, y: 0.0033446574, z: -3.042687e-11}
+      rotation: {x: 0.0035537581, y: 0.016521033, z: -0.003685091, w: 0.99985045}
+      scale: {x: 1, y: 0.99999994, z: 0.9999997}
     - name: Collar.l
       parentName: Chest
-      position: {x: -0.0008539532, y: 0.0038679999, z: -0.00024347022}
+      position: {x: -0.00085395307, y: 0.0038679992, z: -0.00024347015}
       rotation: {x: 0.54950047, y: -0.4907447, z: -0.48461974, w: -0.47155336}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
     - name: UpperArm.l
       parentName: Collar.l
-      position: {x: 1.9818544e-11, y: 0.0029363045, z: 1.9818544e-11}
-      rotation: {x: -0.65680677, y: -0.05728386, z: -0.068134226, w: 0.7487865}
-      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+      position: {x: -4.4591726e-11, y: 0.0029363045, z: -0.0000000011940673}
+      rotation: {x: -0.675462, y: -0.018114984, z: -0.02868795, w: 0.73661387}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
     - name: LowerArm.l
       parentName: UpperArm.l
-      position: {x: 1.783669e-10, y: 0.0053190137, z: -8.918345e-11}
-      rotation: {x: -0.016750433, y: 0.013335791, z: 0.26983294, w: 0.9626691}
-      scale: {x: 1, y: 0.99999994, z: 1}
+      position: {x: -6.6887586e-11, y: 0.0053190137, z: 2.2915192e-10}
+      rotation: {x: 0.0053590145, y: 0.0140119465, z: 0.12783945, w: 0.9916814}
+      scale: {x: 1, y: 1, z: 1}
     - name: Carpals.l
       parentName: LowerArm.l
-      position: {x: -3.963709e-11, y: 0.004744362, z: -1.9818544e-11}
-      rotation: {x: 0.02760233, y: -0.033605643, z: 0.085416615, w: 0.9953958}
-      scale: {x: 1, y: 0.99999994, z: 1}
+      position: {x: 7.184223e-11, y: 0.0047443616, z: 6.490573e-10}
+      rotation: {x: 0.03202951, y: -0.0331753, z: 0.1601662, w: 0.98601234}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999999}
     - name: f1a.l
       parentName: Carpals.l
-      position: {x: -1.9818544e-10, y: 0.0013141873, z: 1.9818544e-10}
-      rotation: {x: -0.07708977, y: -0.06592189, z: 0.7154131, w: 0.6912999}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: 1.4863909e-10, y: 0.0013141877, z: 1.0652468e-10}
+      rotation: {x: -0.07708978, y: -0.065921895, z: 0.71541315, w: 0.69129986}
+      scale: {x: 0.99999976, y: 0.99999994, z: 1.0000001}
     - name: f1b.l
       parentName: f1a.l
-      position: {x: 3.418699e-10, y: 0.0008919324, z: 5.549192e-10}
-      rotation: {x: -0.04261353, y: 0.07317161, z: -0.59077144, w: 0.8023834}
+      position: {x: -1.5854836e-10, y: 0.0008919318, z: 2.5764108e-10}
+      rotation: {x: -0.042613525, y: 0.073171616, z: -0.59077144, w: 0.8023834}
       scale: {x: 1, y: 1, z: 1}
     - name: f1c.l
       parentName: f1b.l
-      position: {x: -1.5854836e-10, y: 0.00037739155, z: -2.774596e-10}
-      rotation: {x: -0.026694342, y: -0.0015217694, z: -0.20830067, w: 0.97769934}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 1.5854836e-10, y: 0.00037739117, z: 2.1800399e-10}
+      rotation: {x: -0.026694361, y: -0.0015217866, z: -0.20830062, w: 0.97769934}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
     - name: f1c.l_end
       parentName: f1c.l
       position: {x: -0, y: 0.00031768443, z: 0}
@@ -1414,24 +1421,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f2a.l
       parentName: Carpals.l
-      position: {x: -1.9818544e-10, y: 0.0013141873, z: 1.9818544e-10}
-      rotation: {x: 0.000000039007443, y: -0.00000005749799, z: 0.39377457, w: 0.9192071}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: 1.4863909e-10, y: 0.0013141877, z: 1.0652468e-10}
+      rotation: {x: 0.000000042046988, y: -0.000000060917465, z: 0.39377457, w: 0.9192071}
+      scale: {x: 1.0000001, y: 1, z: 1}
     - name: f2b.l
       parentName: f2a.l
-      position: {x: 3.963709e-11, y: 0.00056250213, z: 2.5764108e-10}
-      rotation: {x: -0.17465478, y: 0.11264697, z: -0.3366643, w: 0.91840273}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      position: {x: -7.927418e-11, y: 0.0005625018, z: 2.72505e-10}
+      rotation: {x: -0.17465481, y: 0.112646975, z: -0.33666432, w: 0.91840273}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
     - name: f2c.l
       parentName: f2b.l
-      position: {x: -4.756451e-10, y: 0.0005074426, z: 1.5854836e-10}
-      rotation: {x: -0.20371497, y: 0.011298965, z: -0.033956703, w: 0.978376}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: 1.4863909e-10, y: 0.0005074428, z: -9.512902e-10}
+      rotation: {x: -0.20371498, y: 0.011298964, z: -0.033956673, w: 0.978376}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
     - name: f2d.l
       parentName: f2c.l
-      position: {x: 7.927418e-11, y: 0.00055147446, z: 3.170967e-10}
-      rotation: {x: -0.24804369, y: 0.007590893, z: 0.016167384, w: 0.96858424}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      position: {x: 7.4319544e-11, y: 0.00055147446, z: -4.756451e-10}
+      rotation: {x: -0.24804363, y: 0.0075909034, z: 0.01616739, w: 0.96858424}
+      scale: {x: 0.99999964, y: 1, z: 0.99999994}
     - name: f2d.l_end
       parentName: f2d.l
       position: {x: -0, y: 0.00039270057, z: 0}
@@ -1439,24 +1446,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f3a.l
       parentName: Carpals.l
-      position: {x: -1.9818544e-10, y: 0.0013141873, z: 1.9818544e-10}
-      rotation: {x: 0.000000066130916, y: -0.000000013039898, z: -0.014556605, w: 0.9998941}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 1.4863909e-10, y: 0.0013141877, z: 1.0652468e-10}
+      rotation: {x: 0.00000006915804, y: -0.000000015368457, z: -0.0145565905, w: 0.9998941}
+      scale: {x: 1, y: 1.0000001, z: 1}
     - name: f3b.l
       parentName: f3a.l
-      position: {x: -1.1891127e-10, y: 0.0005064861, z: 9.909272e-11}
-      rotation: {x: -0.20638524, y: 0.018636903, z: -0.028580818, w: 0.97787577}
-      scale: {x: 1, y: 1, z: 0.99999994}
+      position: {x: -1.9818544e-11, y: 0.00050648634, z: 4.2114406e-11}
+      rotation: {x: -0.20638527, y: 0.018636907, z: -0.028580835, w: 0.97787577}
+      scale: {x: 1, y: 0.99999994, z: 1}
     - name: f3c.l
       parentName: f3b.l
-      position: {x: 1.5854836e-10, y: 0.0006688322, z: 1.5854836e-10}
-      rotation: {x: -0.20359126, y: 0.0136750415, z: 0.013242145, w: 0.9788709}
-      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999994}
+      position: {x: -9.909272e-11, y: 0.0006688316, z: 1.387298e-10}
+      rotation: {x: -0.20359124, y: 0.0136750275, z: 0.013242148, w: 0.9788709}
+      scale: {x: 0.99999994, y: 1, z: 0.99999976}
     - name: f3d.l
       parentName: f3c.l
-      position: {x: -2.774596e-10, y: 0.0004253288, z: -7.927418e-11}
-      rotation: {x: -0.24717315, y: 0.02240289, z: 0.0099294, w: 0.9686614}
-      scale: {x: 1, y: 1, z: 1.0000001}
+      position: {x: 3.963709e-11, y: 0.00042532865, z: -3.567338e-10}
+      rotation: {x: -0.24717309, y: 0.02240287, z: 0.00992942, w: 0.9686615}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: f3d.l_end
       parentName: f3d.l
       position: {x: -0, y: 0.00038744434, z: 0}
@@ -1464,24 +1471,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f4a.l
       parentName: Carpals.l
-      position: {x: -1.9818544e-10, y: 0.0013141873, z: 1.9818544e-10}
-      rotation: {x: 0.00000009156409, y: 0.000000008976571, z: -0.32205155, w: 0.94672215}
+      position: {x: 1.4863909e-10, y: 0.0013141877, z: 1.0652468e-10}
+      rotation: {x: 0.0000000932395, y: 0.000000009099539, z: -0.3220515, w: 0.94672215}
       scale: {x: 1, y: 1, z: 1.0000001}
     - name: f4b.l
       parentName: f4a.l
-      position: {x: -5.9455635e-11, y: 0.0005530165, z: 2.9727817e-10}
-      rotation: {x: -0.11582541, y: -0.079531565, z: 0.25098592, w: 0.9577397}
-      scale: {x: 0.99999994, y: 1, z: 1}
+      position: {x: -7.927418e-11, y: 0.00055301585, z: -3.592111e-10}
+      rotation: {x: -0.11582543, y: -0.079531565, z: 0.25098592, w: 0.9577397}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: f4c.l
       parentName: f4b.l
-      position: {x: -0, y: 0.0004892784, z: -1.1891127e-10}
-      rotation: {x: -0.20392247, y: 0.007050486, z: 0.032172773, w: 0.97843283}
-      scale: {x: 1.0000001, y: 1, z: 0.9999998}
+      position: {x: -0, y: 0.00048927823, z: 4.954636e-10}
+      rotation: {x: -0.20392253, y: 0.007050483, z: 0.03217275, w: 0.97843283}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
     - name: f4d.l
       parentName: f4c.l
-      position: {x: -0, y: 0.00043216057, z: -3.170967e-10}
-      rotation: {x: -0.24797417, y: 0.0100903, z: -0.029314041, w: 0.9682705}
-      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+      position: {x: 5.9455635e-11, y: 0.0004321601, z: 3.963709e-11}
+      rotation: {x: -0.24797416, y: 0.010090301, z: -0.029314078, w: 0.9682705}
+      scale: {x: 1, y: 1, z: 1}
     - name: f4d.l_end
       parentName: f4d.l
       position: {x: -0, y: 0.0003859294, z: 0}
@@ -1489,24 +1496,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f5a.l
       parentName: Carpals.l
-      position: {x: -1.9818544e-10, y: 0.0013141873, z: 1.9818544e-10}
-      rotation: {x: 0.000000098925, y: 0.000000021674571, z: -0.54584795, w: 0.83788425}
-      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+      position: {x: 1.4863909e-10, y: 0.0013141877, z: 1.0652468e-10}
+      rotation: {x: 0.00000010114804, y: 0.0000000227861, z: -0.54584795, w: 0.8378843}
+      scale: {x: 1, y: 1, z: 1.0000001}
     - name: f5b.l
       parentName: f5a.l
-      position: {x: -1.09001995e-10, y: 0.00072983676, z: -3.7655234e-10}
-      rotation: {x: -0.06923142, y: -0.11682399, z: 0.37532243, w: 0.9168927}
-      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+      position: {x: -3.9637088e-10, y: 0.00072983676, z: 5.772151e-10}
+      rotation: {x: -0.06923143, y: -0.11682401, z: 0.37532246, w: 0.9168927}
+      scale: {x: 0.9999997, y: 0.9999997, z: 0.9999998}
     - name: f5c.l
       parentName: f5b.l
-      position: {x: -1.1891127e-10, y: 0.0003385235, z: -4.5582652e-10}
-      rotation: {x: -0.20153995, y: -0.031894002, z: 0.075213335, w: 0.9760673}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -7.927418e-11, y: 0.0003385238, z: 5.9455635e-11}
+      rotation: {x: -0.20153995, y: -0.031893995, z: 0.07521331, w: 0.9760673}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: f5d.l
       parentName: f5c.l
-      position: {x: -0, y: 0.00030621176, z: -5.549192e-10}
-      rotation: {x: -0.24794985, y: -0.0107762255, z: 0.033436343, w: 0.9681357}
-      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+      position: {x: 1.5854836e-10, y: 0.00030621237, z: -5.549192e-10}
+      rotation: {x: -0.24794985, y: -0.010776228, z: 0.03343632, w: 0.9681357}
+      scale: {x: 1, y: 1, z: 0.99999994}
     - name: f5d.l_end
       parentName: f5d.l
       position: {x: -0, y: 0.00031280625, z: 0}
@@ -1514,39 +1521,39 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Collar.r
       parentName: Chest
-      position: {x: 0.000853953, y: 0.0038679999, z: -0.0002434707}
-      rotation: {x: 0.5495005, y: 0.49074462, z: 0.48461965, w: -0.47155347}
-      scale: {x: 1.0000001, y: 1, z: 1}
+      position: {x: 0.000853953, y: 0.0038679997, z: -0.00024347063}
+      rotation: {x: 0.5495006, y: 0.49074462, z: 0.48461968, w: -0.47155353}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
     - name: UpperArm.r
       parentName: Collar.r
-      position: {x: 1.8332154e-10, y: 0.0029363048, z: 9.512902e-10}
-      rotation: {x: -0.6271843, y: 0.043638803, z: 0.043469694, w: 0.77643156}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+      position: {x: -9.909272e-11, y: 0.0029363045, z: -1.4863909e-10}
+      rotation: {x: -0.6683467, y: -0.19808531, z: -0.21410172, w: 0.68427736}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
     - name: LowerArm.r
       parentName: UpperArm.r
-      position: {x: 2.1800399e-10, y: 0.005319015, z: -3.567338e-10}
-      rotation: {x: -0.05626525, y: -0.03139461, z: -0.120775245, w: 0.9905867}
-      scale: {x: 1, y: 1.0000001, z: 1}
+      position: {x: 5.9455635e-10, y: 0.0053190147, z: 1.2882054e-10}
+      rotation: {x: -0.14508353, y: -0.03070769, z: -0.48332727, w: 0.86278766}
+      scale: {x: 1.0000001, y: 1, z: 1}
     - name: Carpals.r
       parentName: LowerArm.r
-      position: {x: 9.909272e-11, y: 0.0047443607, z: 2.7250499e-11}
-      rotation: {x: -0.004918625, y: -0.036232576, z: -0.04096904, w: 0.99849117}
-      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+      position: {x: 7.927418e-11, y: 0.004744361, z: -3.170967e-10}
+      rotation: {x: -0.044233285, y: 0.08277184, z: -0.007597088, w: 0.9955574}
+      scale: {x: 0.9999997, y: 0.9999999, z: 1}
     - name: f1a.r
       parentName: Carpals.r
-      position: {x: 9.909272e-12, y: 0.0013141873, z: 4.5582652e-10}
-      rotation: {x: -0.022393536, y: 0.020722294, z: -0.65443605, w: 0.75550157}
-      scale: {x: 0.9999997, y: 0.9999999, z: 0.99999994}
+      position: {x: 2.1800399e-10, y: 0.0013141868, z: -3.567338e-10}
+      rotation: {x: -0.4898584, y: 0.045492154, z: -0.62774676, w: 0.60324395}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
     - name: f1b.r
       parentName: f1a.r
-      position: {x: 1.0404736e-10, y: 0.00089193217, z: 2.9727817e-11}
-      rotation: {x: -0.02876188, y: -0.010290724, z: 0.5818452, w: 0.81272566}
-      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+      position: {x: -1.387298e-10, y: 0.0008919315, z: -1.5854836e-10}
+      rotation: {x: -0.02876188, y: -0.010290745, z: 0.5818452, w: 0.81272566}
+      scale: {x: 0.99999994, y: 1, z: 1}
     - name: f1c.r
       parentName: f1b.r
-      position: {x: 3.963709e-11, y: 0.00037739097, z: 4.756451e-10}
-      rotation: {x: -0.094969645, y: -0.0124226995, z: 0.09947524, w: 0.9904197}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      position: {x: -8.323789e-10, y: 0.0003773916, z: -7.927418e-11}
+      rotation: {x: -0.286802, y: 0.21064533, z: 0.3362056, w: 0.8719742}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: f1c.r_end
       parentName: f1c.r
       position: {x: -0, y: 0.00031768443, z: 0}
@@ -1554,24 +1561,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f2a.r
       parentName: Carpals.r
-      position: {x: 9.909272e-12, y: 0.0013141873, z: 4.5582652e-10}
-      rotation: {x: -0.00000005825788, y: 0.000000026089397, z: -0.39377457, w: 0.9192071}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      position: {x: 2.1800399e-10, y: 0.0013141868, z: -3.567338e-10}
+      rotation: {x: -0.000000055218337, y: 0.00000002836905, z: -0.39377457, w: 0.9192071}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
     - name: f2b.r
       parentName: f2a.r
-      position: {x: -6.9984234e-11, y: 0.00056250184, z: 4.7688374e-11}
-      rotation: {x: -0.07905263, y: -0.0036666195, z: 0.3407512, w: 0.93681693}
-      scale: {x: 0.99999994, y: 1, z: 1}
+      position: {x: -7.927418e-11, y: 0.0005625023, z: 2.9727817e-11}
+      rotation: {x: 0.023969775, y: 0.05363875, z: 0.33726498, w: 0.9395748}
+      scale: {x: 0.9999999, y: 1, z: 1}
     - name: f2c.r
       parentName: f2b.r
-      position: {x: 5.9455635e-11, y: 0.0005074426, z: 4.805997e-10}
-      rotation: {x: -0.13241822, y: 0.026197629, z: 0.03263689, w: 0.9903101}
-      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+      position: {x: -2.8241426e-10, y: 0.0005074424, z: -5.648285e-10}
+      rotation: {x: -0.11152876, y: 0.028876416, z: 0.033619124, w: 0.9927725}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
     - name: f2d.r
       parentName: f2c.r
-      position: {x: 1.1891127e-10, y: 0.00055147446, z: 1.7341226e-10}
-      rotation: {x: -0.18907192, y: 0.04230637, z: -0.019520968, w: 0.98085725}
-      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+      position: {x: -3.567338e-10, y: 0.0005514747, z: -5.1528215e-10}
+      rotation: {x: -0.76206124, y: -0.021737771, z: -0.10459265, w: 0.63863176}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
     - name: f2d.r_end
       parentName: f2d.r
       position: {x: -0, y: 0.00039270057, z: 0}
@@ -1579,24 +1586,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f3a.r
       parentName: Carpals.r
-      position: {x: 9.909272e-12, y: 0.0013141873, z: 4.5582652e-10}
-      rotation: {x: -0.000000036325428, y: 0.00000001140991, z: 0.014556613, w: 0.9998941}
-      scale: {x: 0.9999999, y: 1, z: 1}
+      position: {x: 2.1800399e-10, y: 0.0013141868, z: -3.567338e-10}
+      rotation: {x: -0.000000039003275, y: 0.000000016765586, z: 0.014556587, w: 0.9998941}
+      scale: {x: 1, y: 0.99999994, z: 1}
     - name: f3b.r
       parentName: f3a.r
-      position: {x: -9.66154e-11, y: 0.0005064866, z: -8.918345e-11}
-      rotation: {x: -0.09161744, y: 0.0108222095, z: 0.044113673, w: 0.99475783}
-      scale: {x: 1, y: 1, z: 0.9999998}
+      position: {x: -1.5854836e-10, y: 0.000506486, z: -9.909272e-11}
+      rotation: {x: -0.4882629, y: -0.04659616, z: 0.15025811, w: 0.8584001}
+      scale: {x: 1, y: 1.0000001, z: 0.99999976}
     - name: f3c.r
       parentName: f3b.r
-      position: {x: -1.9818544e-11, y: 0.0006688316, z: 8.918345e-11}
-      rotation: {x: -0.1335807, y: 0.019993884, z: -0.013199946, w: 0.99074835}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 1.9818544e-10, y: 0.0006688319, z: 7.134676e-10}
+      rotation: {x: -0.6687109, y: 0.034840472, z: 0.06611993, w: 0.73975676}
+      scale: {x: 0.9999999, y: 1, z: 0.9999998}
     - name: f3d.r
       parentName: f3c.r
-      position: {x: 2.9727817e-11, y: 0.00042532827, z: 6.403867e-10}
-      rotation: {x: -0.19234909, y: 0.024218988, z: -0.009808767, w: 0.98097867}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      position: {x: 3.170967e-10, y: 0.0004253281, z: -5.549192e-10}
+      rotation: {x: -0.43199134, y: 0.02589164, z: -0.00820347, w: 0.9014687}
+      scale: {x: 1, y: 0.99999994, z: 1}
     - name: f3d.r_end
       parentName: f3d.r
       position: {x: -0, y: 0.00038744434, z: 0}
@@ -1604,24 +1611,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f4a.r
       parentName: Carpals.r
-      position: {x: 9.909272e-12, y: 0.0013141873, z: 4.5582652e-10}
-      rotation: {x: -0.0000000049186695, y: 0.000000010329205, z: 0.3220516, w: 0.9467221}
-      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+      position: {x: 2.1800399e-10, y: 0.0013141868, z: -3.567338e-10}
+      rotation: {x: -0.0000000039349355, y: 0.000000016723472, z: 0.32205155, w: 0.94672215}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
     - name: f4b.r
       parentName: f4a.r
-      position: {x: 1.1891127e-10, y: 0.00055301667, z: 6.93649e-11}
-      rotation: {x: -0.10371128, y: 0.026151845, z: -0.16979621, w: 0.97965777}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      position: {x: 4.5582652e-10, y: 0.00055301667, z: -3.963709e-11}
+      rotation: {x: -0.48496285, y: 0.13073538, z: -0.025242615, w: 0.8643391}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
     - name: f4c.r
       parentName: f4b.r
-      position: {x: -1.6845762e-10, y: 0.00048927794, z: 4.756451e-10}
-      rotation: {x: -0.13422775, y: 0.01440437, z: -0.029765634, w: 0.99039865}
-      scale: {x: 1, y: 0.99999994, z: 1}
+      position: {x: -1.1891127e-10, y: 0.00048927846, z: -3.9637088e-10}
+      rotation: {x: -0.5259388, y: 0.09918481, z: 0.081105605, w: 0.8408166}
+      scale: {x: 1, y: 0.99999976, z: 1}
     - name: f4d.r
       parentName: f4c.r
-      position: {x: 5.9455635e-11, y: 0.00043216036, z: 2.5764108e-10}
-      rotation: {x: -0.19278345, y: 0.01949783, z: 0.034042533, w: 0.98045677}
-      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+      position: {x: 1.238659e-12, y: 0.00043216103, z: 7.927418e-11}
+      rotation: {x: -0.5183983, y: 0.07392174, z: 0.08260953, w: 0.8479237}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.9999997}
     - name: f4d.r_end
       parentName: f4d.r
       position: {x: -0, y: 0.0003859294, z: 0}
@@ -1629,24 +1636,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: f5a.r
       parentName: Carpals.r
-      position: {x: 9.909272e-12, y: 0.0013141873, z: 4.5582652e-10}
-      rotation: {x: 0.000000018340032, y: 0.000000023619737, z: 0.54584795, w: 0.83788425}
-      scale: {x: 1, y: 0.9999999, z: 1}
+      position: {x: 2.1800399e-10, y: 0.0013141868, z: -3.567338e-10}
+      rotation: {x: 0.000000013755024, y: 0.000000033901273, z: 0.54584795, w: 0.83788425}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
     - name: f5b.r
       parentName: f5a.r
-      position: {x: 3.963709e-11, y: 0.0007298368, z: -2.9727817e-11}
-      rotation: {x: -0.108991735, y: 0.047488037, z: -0.30336922, w: 0.9454273}
-      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+      position: {x: -5.1528215e-10, y: 0.0007298377, z: -4.0628015e-10}
+      rotation: {x: -0.35126, y: 0.19671367, z: -0.17052238, w: 0.8993566}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
     - name: f5c.r
       parentName: f5b.r
-      position: {x: -0, y: 0.00033852365, z: -1.5854836e-10}
-      rotation: {x: -0.13377817, y: 0.016806774, z: -0.06904455, w: 0.9884603}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+      position: {x: 1.5854836e-10, y: 0.00033852365, z: 0.0000000016647578}
+      rotation: {x: -0.5123124, y: 0.19347733, z: 0.100887924, w: 0.8306167}
+      scale: {x: 1, y: 1, z: 0.99999994}
     - name: f5d.r
       parentName: f5c.r
-      position: {x: -1.1891127e-10, y: 0.00030621188, z: 6.738305e-10}
-      rotation: {x: -0.19351216, y: 0.0022179459, z: -0.023470828, w: 0.98081464}
-      scale: {x: 0.99999994, y: 1, z: 1}
+      position: {x: 4.4591725e-10, y: 0.00030621188, z: 4.756451e-10}
+      rotation: {x: -0.293905, y: 0.02607928, z: 0.011189723, w: 0.9554133}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.99999994}
     - name: f5d.r_end
       parentName: f5d.r
       position: {x: -0, y: 0.00031280625, z: 0}
@@ -1654,9 +1661,9 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Neck
       parentName: Chest
-      position: {x: 9.909272e-12, y: 0.0041425554, z: -2.477318e-11}
-      rotation: {x: -0.00000025731165, y: 0.9811612, z: 0.193191, w: -0.0000014078124}
-      scale: {x: 1, y: 0.9999998, z: 1.0000001}
+      position: {x: 1.6102567e-11, y: 0.004142555, z: 4.954636e-11}
+      rotation: {x: -0.0000002583298, y: 0.9811612, z: 0.193191, w: -0.0000014080128}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
     - name: Neck_end
       parentName: Neck
       position: {x: -0, y: 0.00219626, z: 0}

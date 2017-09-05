@@ -144,6 +144,7 @@ public class DebugConsole : MonoBehaviour
 				DebugGui = new GameObject();
 				DebugGui.AddComponent<GUIText>();
 				DebugGui.name = "DebugGUI(0)";
+				DebugGui.tag = "UI";
 				DebugGui.layer = 5;
 				DebugGui.transform.position = defaultGuiPosition;
 				DebugGui.transform.localScale = defaultGuiScale;

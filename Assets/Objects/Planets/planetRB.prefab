@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4065948735101606}
   - component: {fileID: 54436069880079858}
   - component: {fileID: 114981785237457878}
-  - component: {fileID: 114601387438458044}
   - component: {fileID: 135599667350170008}
   - component: {fileID: 114701735171125082}
   m_Layer: 8
@@ -59,17 +58,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114601387438458044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1671406892735626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d443994ac3d5047968802c2b7469b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114701735171125082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,9 +81,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5850f51ef51f7499c43c87aad29eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  divisionFactor: 1
+  multFactor: 1
   forceP: 0
-  distance: 0
+  planetInfoArray: []
 --- !u!135 &135599667350170008
 SphereCollider:
   m_ObjectHideFlags: 1

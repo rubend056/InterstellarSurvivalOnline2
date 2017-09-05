@@ -4753,8 +4753,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5850f51ef51f7499c43c87aad29eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  divisionFactor: 1
+  multFactor: 1
   forceP: 0
+  planetInfoArray: []
 --- !u!114 &114161027640466790
 MonoBehaviour:
   m_ObjectHideFlags: 1

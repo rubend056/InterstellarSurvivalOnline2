@@ -10,13 +10,12 @@ public class UniverseCenter : MonoBehaviour{
 	public Transform universeCenter;
 
 	public bool centerUniverse = false;
-	public float snapDistance = 1000000;
-	private Vector3 shiftedPos;
-	//private Vector3 shiftedRot;
+	public float snapDistance = 1000;
+	public Vector3 shiftedPos =  Vector3.zero;
 
 	public List<Transform> allOthers;
 	public LineRenderer[] trenderers;
-	private GameObject master;
+
 	void Awake(){
 		instance = this;
 		allOthers = new List<Transform> ();
@@ -24,9 +23,7 @@ public class UniverseCenter : MonoBehaviour{
 	}
 
 	void Start(){
-		shiftedPos = Vector3.zero;
 		switchCenter ();
-		//shiftedRot = Vector3.zero;
 	}
 
 	//private int i = 0;
@@ -44,51 +41,41 @@ public class UniverseCenter : MonoBehaviour{
 	void OnCenterOn(){
 		UpdateAllOthers ();
 		shiftedPos = universeCenter.position;
-		//shiftedRot = universeCenter.eulerAngles;
+		shiftEverything (-universeCenter.position);
 
-		master = new GameObject();
-		master.transform.position = shiftedPos;
-		master.name = "Master";
-		master.tag = "root";
-		//master.transform.rotation = Quaternion.Euler(shiftedRot);
-		foreach (Transform trans in allOthers) {
-			trans.parent = master.transform;
-		}
-		shiftEverything (-shiftedPos);
-		//master.transform.rotation = Quaternion.identity;
 	}
 	void OnCenterOff(){
 		
-		shiftEverything(-shiftedPos);
-		shiftedPos = Vector3.zero;
-		//master.transform.rotation = Quaternion.Euler(shiftedRot);
-		foreach (Transform trans in allOthers) {
-			trans.parent = null;
-		}
-		GameObject.Destroy (master);
-
+		shiftEverything(shiftedPos);
 	}
 
 	void UpdateAllOthers(){
 		allOthers.Clear ();
 		GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>() ;
 		for (int i = 0; i < allObjects.Length; i++) {
-			if (allObjects[i].transform.parent == null && allObjects[i].layer != 5) {
+			if (allObjects[i].transform.parent == null && 
+				allObjects[i].layer != 5 &&
+				allObjects[i].tag != "Singleton" &&
+				allObjects[i].tag != "UI") {
 				allOthers.Add (allObjects [i].transform);
 			}
 		}
-		List<LineRenderer> trList = new List<LineRenderer> ();
+		List<LineRenderer> lrList = new List<LineRenderer> ();
 		foreach (Transform trans in allOthers) {
 			var trail = trans.GetComponent<LineRenderer> ();
 			if (trail != null)
-				trList.Add (trail);
+				lrList.Add (trail);
 		}
-		trenderers = trList.ToArray ();
+		trenderers = lrList.ToArray ();
 	}
 
 	void shiftEverything(Vector3 ammount/*, Vector3 rotammount*/){
-		
-		master.transform.position += ammount;
+
+		shiftedPos -= ammount;
+
+		foreach (Transform trans in allOthers) {
+			trans.position += ammount;
+		}
 		//master.transform.eulerAngles += rotammount;
 
 		for (int i = 0; i < trenderers.Length; i++) {

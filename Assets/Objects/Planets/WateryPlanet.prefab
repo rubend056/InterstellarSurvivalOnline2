@@ -7145,7 +7145,7 @@ MonoBehaviour:
   finalSizeDev: 0.12
   growingSpeed: 0.1
   startSpawnNumber: 3
-  doTrees: 1
+  doTrees: 0
   planetT: {fileID: 4807997248209272}
   areChildren: 1
   regionArray:

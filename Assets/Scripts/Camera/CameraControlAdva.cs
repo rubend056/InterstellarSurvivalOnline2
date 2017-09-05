@@ -43,7 +43,8 @@ public class CameraControlAdva : MonoBehaviour {
 	public bool pause = false;
 	public bool planetView = false;
 	private GameObject previewObject;
-	private Camera cam;
+	[HideInInspector]
+	public Camera cam;
 	private float normalFOV;
 	//public VRInputModule vrInput;
 	Transform myself;
@@ -55,7 +56,6 @@ public class CameraControlAdva : MonoBehaviour {
 //	private Transform startingParent;
 	public bool touchEnabled = true;
 
-	public bool autoRotate = false;
 	public bool targetOrientation = false;
 
 	void Awake(){
@@ -77,8 +77,8 @@ public class CameraControlAdva : MonoBehaviour {
 		myself = gameObject.transform;
 		//if (toFollowTransform != null)
 			//myself.SetParent (toFollowTransform);
-		if (toFollow!=null)
-			cursorCheck ();
+//		if (toFollow)
+//			cursorCheck ();
 	}
 
 	//private Vector2 degreesOffset = Vector2.zero;
@@ -101,7 +101,7 @@ public class CameraControlAdva : MonoBehaviour {
 		Vector3 beforePos = myself.position;
 
 		if (viewMode == ViewMode.around) {
-			if (toFollow != null) {
+			if (toFollow) {
 				
 				if (!pause) {
 					float mouseX = 0, mouseY = 0, scroll = 0;
@@ -231,6 +231,8 @@ public class CameraControlAdva : MonoBehaviour {
 	}
 
 	public void useTargetOrientation(bool value){
+		if (toFollow == null)
+			return;
 		targetOrientation = value;
 		if (lookAt != null)
 			lookAt.useOtherOrient = value;
@@ -338,7 +340,7 @@ public class CameraControlAdva : MonoBehaviour {
 		}*/
 	}
 
-	public void cursorCheck(){
+//	public void cursorCheck(){
 //		if (toFollow.tag == "Player" && viewMode == ViewMode.around) {
 //			Cursor.visible = false;
 //			Cursor.lockState = CursorLockMode.Locked;
@@ -346,11 +348,11 @@ public class CameraControlAdva : MonoBehaviour {
 //			Cursor.lockState = CursorLockMode.None;
 //			Cursor.visible = true;
 //		}
-	}
+//	}
 
-	public void spawnPlayer(){
-		
-	}
+//	public void spawnPlayer(){
+//		
+//	}
 
 	/*
 	void changePreview(){

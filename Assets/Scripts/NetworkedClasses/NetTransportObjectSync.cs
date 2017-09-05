@@ -90,7 +90,7 @@ public class NetTransportObjectSync : NetTransportText{
 		case TransUpdateType.Transform:
 			bc.add (iat.netTrans.getPosition());
 			bc.add (iat.netTrans.getRotation());
-			bc.add (transform.localScale);
+			bc.add (iat.netTrans.trans.localScale);
 			break;
 //		case TransUpdateType.Position:
 //			bc.add (ByteHelper.vector3Bytes(transform.position));
@@ -104,9 +104,9 @@ public class NetTransportObjectSync : NetTransportText{
 		case TransUpdateType.TransAndRigidbody:
 			bc.add (iat.netTrans.getPosition());
 			bc.add (iat.netTrans.getRotation());
-			bc.add (transform.localScale);
+			bc.add (iat.netTrans.trans.localScale);
 
-			var body = transform.GetComponent<Rigidbody> ();
+			var body = iat.netTrans.trans.GetComponent<Rigidbody> ();
 			bc.add (body.velocity);
 			bc.add (body.angularVelocity);
 			break;
@@ -234,7 +234,7 @@ public class NetTransportObjectSync : NetTransportText{
 	}
 
 	private IEnumerator syncCoroutine(IdentityAndTransform iat){
-		
+		yield return null;
 		WaitForSeconds w4s = new WaitForSeconds (4f);
 		while (iat != null) {
 			if (iat.netTrans.sendRate > 0 && iat.netIdentity.HasAuthority && isConnected ()) {
@@ -269,10 +269,11 @@ public class NetTransportObjectSync : NetTransportText{
 	public IdentityAndTransform spawnObjectSync(int prefabIndex, int authorityID, Vector3 pos, Quaternion rot, int objectID){
 		destroyObjectByID (objectID);
 
-		GameObject rootObj = GameObject.FindGameObjectWithTag ("root");
-		var instance = GameObject.Instantiate (spawnableObjects [prefabIndex], pos, rot);
-		if (rootObj != null)
-			instance.transform.parent = rootObj.transform;
+//		GameObject rootObj = GameObject.FindGameObjectWithTag ("root");
+		var instance = GameObject.Instantiate (spawnableObjects [prefabIndex], pos + UniverseCenter.instance.shiftedPos, rot);
+		UniverseCenter.instance.allOthers.Add (instance.transform);
+//		if (rootObj != null)
+//			instance.transform.parent = rootObj.transform;
 
 		var iat = new IdentityAndTransform (instance, prefabIndex, objectID, authorityID, false);
 
@@ -291,10 +292,11 @@ public class NetTransportObjectSync : NetTransportText{
 		if (!server)
 			return null;
 
-		GameObject rootObj = GameObject.FindGameObjectWithTag ("root");
+//		GameObject rootObj = GameObject.FindGameObjectWithTag ("root");
 		var instance = GameObject.Instantiate (spawnableObjects [prefabIndex], pos, rot);
-		if (rootObj != null)
-			instance.transform.parent = rootObj.transform;
+		UniverseCenter.instance.allOthers.Add (instance.transform);
+//		if (rootObj != null)
+//			instance.transform.parent = rootObj.transform;
 
 		var iat = new IdentityAndTransform (instance, prefabIndex, generateID(), authorityID, false);
 

@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour {
 		CCA.yOffset = 1.2f;
 		CCA.toggleViewType (CameraControlAdva.ViewMode.around);
 		CCA.targetOrientation = true;
-		CCA.cursorCheck ();
+//		CCA.cursorCheck ();
 
 		//CmdChangeContinent(CustomNMUI.instance.continent);
 		SmoothLookAtC slac = cameraObj.GetComponent<SmoothLookAtC> ();
@@ -191,7 +191,7 @@ public class PlayerController : MonoBehaviour {
 		Vector3 pushDirection = torsoTransform.forward;
 		float ratio = 0;
 
-		Vector3 rayDir = Vector3.Lerp (pushDirection, -ownTransform.up, 0.75f);
+		Vector3 rayDir = Vector3.Lerp (pushDirection, ownTransform.up, 0.3f);
 
 		Ray ray = new Ray (ownTransform.position, rayDir);
 		RaycastHit rayHit;
