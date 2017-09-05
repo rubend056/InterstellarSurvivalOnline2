@@ -14,10 +14,10 @@ using UnityEngine.UI;
 	[Range(1,30)]
 	public int maxNumPlanets = 0;
 	private float sunRadius = 2800;
-	public float initialSpeed = 100;
+//	public float initialSpeed = 100;
 	[Range (1f, 90f)]
 	public float gameSpeed = 1;
-	public Transform player;
+	public Transform planetUpdateTrans;
 	public Text timeText;
 	public static UniverseManager instance;
 
@@ -102,7 +102,7 @@ using UnityEngine.UI;
 			
 			planetInstaces [i].planet.GetComponent<NetTransformCustom> ().trans = planetInstaces [i].planetRB.transform;
 			planetInstaces [i].planet.GetComponent<PlanetGenerator3> ().radius = planetRadius;
-			planetInstaces [i].planet.GetComponent<PlanetGenerator3> ().player = player;
+			planetInstaces [i].planet.GetComponent<PlanetGenerator3> ().player = planetUpdateTrans;
 			planetInstaces [i].planetRB.GetComponent<PlanetDestruction> ().linkedObject = planetInstaces [i].planet;
 
 			var constraint = planetInstaces [i].planet.GetComponent<ConstraintTrans> ();
@@ -203,7 +203,7 @@ using UnityEngine.UI;
 			constraint.rot = true;
 			
 			pg3.seed = seed;
-			pg3.player = player;
+			pg3.player = planetUpdateTrans;
 			pg3.radius = radius;
 			body.mass = mass;
 			body.AddForce(linVel, ForceMode.VelocityChange);

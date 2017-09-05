@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour {
 			                 Quaternion.identity
 		                 ).instance;
 		changePlayerInstance (playerInst);
-		UniverseManager.instance.player = playerInst.transform;
+		UniverseManager.instance.planetUpdateTrans = playerInst.transform;
 		UniverseCenter.instance.universeCenter = planetInst.transform;
 		UniverseCenter.instance.switchCenter ();
 		spawnPlayer (planetInst);

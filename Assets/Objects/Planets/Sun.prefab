@@ -27,7 +27,6 @@ GameObject:
   - component: {fileID: 54451050319467630}
   - component: {fileID: 135327549158252040}
   - component: {fileID: 114004255838791362}
-  - component: {fileID: 114914142657791940}
   - component: {fileID: 114841454172485272}
   - component: {fileID: 114060793602075684}
   m_Layer: 8
@@ -165,7 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5850f51ef51f7499c43c87aad29eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  multFactor: 1
   forceP: 0
+  planetInfoArray: []
 --- !u!114 &114060793602075684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,17 +215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objID: 0
   type: 2
---- !u!114 &114914142657791940
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1989195278776086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d443994ac3d5047968802c2b7469b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!122 &122335734104668598
 Halo:
   m_ObjectHideFlags: 1
