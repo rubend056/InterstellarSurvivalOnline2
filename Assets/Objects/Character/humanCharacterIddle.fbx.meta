@@ -1,0 +1,628 @@
+fileFormatVersion: 2
+guid: 3a59de91fd4e39f40bedbbf8a940fffa
+timeCreated: 1481821527
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: base
+    100004: Carpals.l
+    100006: Carpals.r
+    100008: Chest
+    100010: Collar.l
+    100012: Collar.r
+    100014: f1a.l
+    100016: f1a.r
+    100018: f1b.l
+    100020: f1b.r
+    100022: f1c.l
+    100024: f1c.l_end
+    100026: f1c.r
+    100028: f1c.r_end
+    100030: f2a.l
+    100032: f2a.r
+    100034: f2b.l
+    100036: f2b.r
+    100038: f2c.l
+    100040: f2c.r
+    100042: f2d.l
+    100044: f2d.l_end
+    100046: f2d.r
+    100048: f2d.r_end
+    100050: f3a.l
+    100052: f3a.r
+    100054: f3b.l
+    100056: f3b.r
+    100058: f3c.l
+    100060: f3c.r
+    100062: f3d.l
+    100064: f3d.l_end
+    100066: f3d.r
+    100068: f3d.r_end
+    100070: f4a.l
+    100072: f4a.r
+    100074: f4b.l
+    100076: f4b.r
+    100078: f4c.l
+    100080: f4c.r
+    100082: f4d.l
+    100084: f4d.l_end
+    100086: f4d.r
+    100088: f4d.r_end
+    100090: f5a.l
+    100092: f5a.r
+    100094: f5b.l
+    100096: f5b.r
+    100098: f5c.l
+    100100: f5c.r
+    100102: f5d.l
+    100104: f5d.l_end
+    100106: f5d.r
+    100108: f5d.r_end
+    100110: Foot.l
+    100112: Foot.r
+    100114: //RootNode
+    100116: IKLeg.l
+    100118: IKLeg.r
+    100120: knee.l
+    100122: knee.l_end
+    100124: knee.r
+    100126: knee.r_end
+    100128: LowerArm.l
+    100130: LowerArm.r
+    100132: LowerLeg.l
+    100134: LowerLeg.r
+    100136: Mesh
+    100138: Neck
+    100140: Neck_end
+    100142: Pelvis
+    100144: root
+    100146: Stomach
+    100148: Toe.l
+    100150: Toe.l_end
+    100152: Toe.r
+    100154: Toe.r_end
+    100156: UpperArm.l
+    100158: UpperArm.r
+    100160: UpperLeg.l
+    100162: UpperLeg.r
+    400000: Armature
+    400002: base
+    400004: Carpals.l
+    400006: Carpals.r
+    400008: Chest
+    400010: Collar.l
+    400012: Collar.r
+    400014: f1a.l
+    400016: f1a.r
+    400018: f1b.l
+    400020: f1b.r
+    400022: f1c.l
+    400024: f1c.l_end
+    400026: f1c.r
+    400028: f1c.r_end
+    400030: f2a.l
+    400032: f2a.r
+    400034: f2b.l
+    400036: f2b.r
+    400038: f2c.l
+    400040: f2c.r
+    400042: f2d.l
+    400044: f2d.l_end
+    400046: f2d.r
+    400048: f2d.r_end
+    400050: f3a.l
+    400052: f3a.r
+    400054: f3b.l
+    400056: f3b.r
+    400058: f3c.l
+    400060: f3c.r
+    400062: f3d.l
+    400064: f3d.l_end
+    400066: f3d.r
+    400068: f3d.r_end
+    400070: f4a.l
+    400072: f4a.r
+    400074: f4b.l
+    400076: f4b.r
+    400078: f4c.l
+    400080: f4c.r
+    400082: f4d.l
+    400084: f4d.l_end
+    400086: f4d.r
+    400088: f4d.r_end
+    400090: f5a.l
+    400092: f5a.r
+    400094: f5b.l
+    400096: f5b.r
+    400098: f5c.l
+    400100: f5c.r
+    400102: f5d.l
+    400104: f5d.l_end
+    400106: f5d.r
+    400108: f5d.r_end
+    400110: Foot.l
+    400112: Foot.r
+    400114: //RootNode
+    400116: IKLeg.l
+    400118: IKLeg.r
+    400120: knee.l
+    400122: knee.l_end
+    400124: knee.r
+    400126: knee.r_end
+    400128: LowerArm.l
+    400130: LowerArm.r
+    400132: LowerLeg.l
+    400134: LowerLeg.r
+    400136: Mesh
+    400138: Neck
+    400140: Neck_end
+    400142: Pelvis
+    400144: root
+    400146: Stomach
+    400148: Toe.l
+    400150: Toe.l_end
+    400152: Toe.r
+    400154: Toe.r_end
+    400156: UpperArm.l
+    400158: UpperArm.r
+    400160: UpperLeg.l
+    400162: UpperLeg.r
+    4300000: Mesh
+    7400000: IntroIddle
+    7400002: IddleLoop
+    9500000: //RootNode
+    13700000: Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IntroIddle
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 500
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/base
+        weight: 1
+      - path: Armature/root/base/Pelvis
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l/Foot.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l/Foot.l/Toe.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l/Foot.l/Toe.l/Toe.l_end
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r/Foot.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r/Foot.r/Toe.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r/Foot.r/Toe.r/Toe.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l/f1b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l/f1b.l/f1c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l/f1b.l/f1c.l/f1c.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l/f2c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l/f2c.l/f2d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l/f2c.l/f2d.l/f2d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l/f3c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l/f3c.l/f3d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l/f3c.l/f3d.l/f3d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l/f4c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l/f4c.l/f4d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l/f4c.l/f4d.l/f4d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l/f5c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l/f5c.l/f5d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l/f5c.l/f5d.l/f5d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r/f1b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r/f1b.r/f1c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r/f1b.r/f1c.r/f1c.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r/f2c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r/f2c.r/f2d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r/f2c.r/f2d.r/f2d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r/f3c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r/f3c.r/f3d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r/f3c.r/f3d.r/f3d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r/f4c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r/f4c.r/f4d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r/f4c.r/f4d.r/f4d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r/f5c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r/f5c.r/f5d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r/f5c.r/f5d.r/f5d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Neck
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Neck/Neck_end
+        weight: 1
+      - path: Armature/root/IKLeg.l
+        weight: 1
+      - path: Armature/root/IKLeg.l/knee.l
+        weight: 1
+      - path: Armature/root/IKLeg.l/knee.l/knee.l_end
+        weight: 1
+      - path: Armature/root/IKLeg.r
+        weight: 1
+      - path: Armature/root/IKLeg.r/knee.r
+        weight: 1
+      - path: Armature/root/IKLeg.r/knee.r/knee.r_end
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: IddleLoop
+      takeName: Armature|ArmatureAction
+      firstFrame: 500
+      lastFrame: 840
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/root
+        weight: 1
+      - path: Armature/root/base
+        weight: 1
+      - path: Armature/root/base/Pelvis
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l/Foot.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l/Foot.l/Toe.l
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.l/LowerLeg.l/Foot.l/Toe.l/Toe.l_end
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r/Foot.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r/Foot.r/Toe.r
+        weight: 1
+      - path: Armature/root/base/Pelvis/UpperLeg.r/LowerLeg.r/Foot.r/Toe.r/Toe.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l/f1b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l/f1b.l/f1c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f1a.l/f1b.l/f1c.l/f1c.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l/f2c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l/f2c.l/f2d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f2a.l/f2b.l/f2c.l/f2d.l/f2d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l/f3c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l/f3c.l/f3d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f3a.l/f3b.l/f3c.l/f3d.l/f3d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l/f4c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l/f4c.l/f4d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f4a.l/f4b.l/f4c.l/f4d.l/f4d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l/f5c.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l/f5c.l/f5d.l
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.l/UpperArm.l/LowerArm.l/Carpals.l/f5a.l/f5b.l/f5c.l/f5d.l/f5d.l_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r/f1b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r/f1b.r/f1c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f1a.r/f1b.r/f1c.r/f1c.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r/f2c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r/f2c.r/f2d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f2a.r/f2b.r/f2c.r/f2d.r/f2d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r/f3c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r/f3c.r/f3d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f3a.r/f3b.r/f3c.r/f3d.r/f3d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r/f4c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r/f4c.r/f4d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f4a.r/f4b.r/f4c.r/f4d.r/f4d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r/f5c.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r/f5c.r/f5d.r
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Collar.r/UpperArm.r/LowerArm.r/Carpals.r/f5a.r/f5b.r/f5c.r/f5d.r/f5d.r_end
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Neck
+        weight: 1
+      - path: Armature/root/base/Stomach/Chest/Neck/Neck_end
+        weight: 1
+      - path: Armature/root/IKLeg.l
+        weight: 1
+      - path: Armature/root/IKLeg.l/knee.l
+        weight: 1
+      - path: Armature/root/IKLeg.l/knee.l/knee.l_end
+        weight: 1
+      - path: Armature/root/IKLeg.r
+        weight: 1
+      - path: Armature/root/IKLeg.r/knee.r
+        weight: 1
+      - path: Armature/root/IKLeg.r/knee.r/knee.r_end
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.266
+    meshCompression: 2
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
